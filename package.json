@@ -1,0 +1,29 @@
+{
+  "name": "my-contacts-api",
+  "version": "1.0.0",
+  "description": "The Rest API to My Contacts application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "Rest API",
+    "Node",
+    "Express"
+  ],
+  "author": "Filipe Dias",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
