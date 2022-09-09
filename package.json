@@ -15,7 +15,8 @@
   "author": "Filipe Dias",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
