@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres
+    container_name: my_contacts_postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=MyContacts
