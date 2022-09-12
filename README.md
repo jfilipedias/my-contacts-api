@@ -31,10 +31,10 @@ Enter container in interactive mode:
 docker exec -it [CONTAINER_NAME] bash
 ```
 
-Enter PostgresSQL server:
+Enter on psql shell with created user:
 
 ```bash
-psql -U [POSTGRES_PASSWORD]
+psql -U [POSTGRES_USER]
 ```
 
 Run the commands listed on [schema.sql](./src/database/schema.sql) on the psql shell.
