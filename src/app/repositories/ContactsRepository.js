@@ -24,8 +24,8 @@ class ContactsRepository {
 
   async create({ name, email, phone, category_id }) {
     const [row] = await db.query(
-      `INSERT INTO contacts(name, email, phone, category_id) 
-      VALUES($1, $2, $3, $4)
+      `INSERT INTO contacts (name, email, phone, category_id) 
+      VALUES ($1, $2, $3, $4) 
       RETURNING *`,
       [name, email, phone, category_id]
     )
@@ -43,10 +43,11 @@ class ContactsRepository {
       `,
       [name, email, phone, category_id, id]
     )
+    
     return row
   }
 
-  async deleteById(id) {
+  async delete(id) {
     const operation = await db.query('DELETE FROM contacts WHERE id = $1', [id])
     return operation
   }

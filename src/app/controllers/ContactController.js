@@ -43,7 +43,7 @@ class ContactController {
       category_id,
     })
 
-    response.status(200).json(contact)
+    response.json(contact)
   }
 
   async update(request, response) {
@@ -87,7 +87,7 @@ class ContactController {
       return response.status(404).json({ error: 'User not found.' })
     }
 
-    await contactsRepository.deleteById(id)
+    await contactsRepository.delete(id)
 
     response.sendStatus(204)
   }
